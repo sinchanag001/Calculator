@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Calculator</title>
+</head> 
+<body>
+<div class="calculator">
+    <input type="text" id="display" readonly>
+
+
+<div class="buttons">
+<button onclick="press1()"> 1 </button>
+<button onclick="press2()"> 2 </button>
+<button onclick="press3()"> 3 </button>
+<button onclick="pressPlus()" class="operator">+</button>
+
+<button onclick="press4()"> 4 </button>
+<button onclick="press5()"> 5 </button>
+<button onclick="press6()"> 6 </button>
+<button onclick="pressMinus()" class="operator">-</button>
+
+<button onclick="press7()"> 7 </button>
+<button onclick="press8()"> 8 </button>
+<button onclick="press9()"> 9 </button>
+<button onclick="pressMultiply()" class="operator">*</button>
+
+<button onclick="press0()"> 0 </button>
+<button onclick="pressMod()" class="operator">%</button>
+<button onclick="pressDivide()" class="operator">/</button>
+<button onclick="calculateResult()" class="equal">=</button>
+
+<button onclick="clearDisplay()" class="clear" style="grid-column: span 4;">C</button>
+</div>
+</div>
+     <script src="function.js" defer></script>
+</body>   
+</html>

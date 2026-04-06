@@ -1,0 +1,63 @@
+/* ----- Animated Gradient Background ----- */
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background: linear-gradient(270deg, #ff3c3c, #000000, #b30000);
+  background-size: 600% 600%;
+  animation: gradientMove 12s ease infinite;
+}
+
+@keyframes gradientMove {
+  0%   { background-position: 0% 50%; }
+  50%  { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* ----- Login Box ----- */
+.login-container {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border-radius: 16px;
+  padding: 2.5rem;
+  width: 90%;
+  max-width: 350px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.4);
+  text-align: center;
+  color: #fff;
+}
+
+.login-container h1 {
+  margin-bottom: 1.5rem;
+  font-weight: 600;
+}
+
+.login-container input {
+  width: 100%;
+  padding: 0.8rem;
+  margin: 0.7rem 0;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+
+.login-container button {
+  width: 100%;
+  padding: 0.9rem;
+  margin-top: 1rem;
+  background-color: #ff3c3c;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.login-container button:hover {
+  background-color: #e00000;
+}
+
